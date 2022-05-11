@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudoclase y psudoelemento</title>
+
+    <style>
+     
+        #fondo {
+            box-sizing: border-box;
+            background-color: blue;
+            background-image: url("fondo.webp"); /*con background-image podemos cargar la url de la imagen(Recomendable hacerlo desde nuestro pc, no de internet)*/
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border: solid;
+            border-color: rgb(14, 133, 224);
+            border-width: 2px;
+            width: 50vw;
+            padding: 0%;
+            border-radius: 10%;     
+            height: 50vh;
+            margin-left: 25vw;
+            margin-right: 25vw;
+
+        }
+
+        #fondo:hover {
+
+
+            background-origin: content-box;
+            background-size: 100% 100%;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+
+        }
+
+        #fondo:active {
+
+            width: 30vw;
+            margin-left: 35vw;
+            margin-right: 35vw;
+
+
+        }
+
+        #texto {
+            background-color: lightblue;
+            padding: 0%;
+            width: 90vw;
+            height: 40vh;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        
+
+        div:hover p::first-letter {
+            font-weight: bold;
+        }
+         #texto:hover {
+            column-count: 3;
+            height: 30vh;
+        }
+
+        div:active p:last-of-type { /* psudoclase y psudoelemento para dar un color distinto al último párrafo al hacer click*/
+            background-color: rgb(42, 149, 215);
+            color: rgb(30, 214, 162);
+           
+        }
+        body {
+            margin: 0px;
+        }
+
+        p {
+            padding: 0%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div id="fondo">
+
+    </div>
+
+    <div id="texto">
+       <p> La sabiduría no se sustenta en lo que se sabe, sino en el alegre e incansable afán 
+           por conocer lo que se ignora, en la consciencia de que, por mucho que se sepa, siempre se sabe muy poco.</p>
+
+        <p> A veces es necesaria la destrucción para dar espacio a una
+            prosperidad mayor. Muchas cosas han caído para ser
+            reemplazadas por otras mejores.</p>
+
+        <p> Timagenes, un enemigo de
+            Roma, no se alegraba cuando los fuegos arrasaban
+            ésta, porque sabía que mejores edificios reemplazarían los
+            que se habían destruido.</p>
+
+      
+    </div>
+
+
+
+</body>
+
+</html>
